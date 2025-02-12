@@ -1,0 +1,11 @@
+package e_review;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Goods g = new Goods();
+
+	}
+
+}

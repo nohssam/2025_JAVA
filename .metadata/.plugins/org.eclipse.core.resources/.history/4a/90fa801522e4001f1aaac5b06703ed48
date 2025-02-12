@@ -1,0 +1,8 @@
+package e_review;
+
+public class Goods {
+
+	int no;
+	String gname;
+	String desc;
+}

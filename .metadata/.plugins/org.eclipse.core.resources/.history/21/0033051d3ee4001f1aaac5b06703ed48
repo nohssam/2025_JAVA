@@ -1,0 +1,18 @@
+package i_inherit;
+
+public class PolySample {
+
+	public static void main(String[] args) {
+		
+		method();
+
+	}
+	
+	static void method() {
+		Book b = new Book("001","파이썬","ICT","여기");
+		CD   c = new CD();
+		DVD  d = new DVD();
+		
+	}
+
+}

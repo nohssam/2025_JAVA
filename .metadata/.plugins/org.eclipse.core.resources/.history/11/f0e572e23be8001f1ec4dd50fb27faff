@@ -1,0 +1,46 @@
+package com.ict.day02;
+
+import java.util.List;
+import java.util.Stack;
+
+public class Ex04_List {
+	public static void main(String[] args) {
+		Stack<String> s1 = new Stack<>();
+		List<String> s2 = new Stack<String>();
+		
+		// 추가, 
+		s1.add("둘리");
+		s1.push("공실이");
+		s1.addElement("마이콜");
+		
+		// 삽입
+		s1.add(1, "손흥민");
+		s1.add(3, "차두리");
+		
+		// 입력 순서대로
+		System.out.println(s1);
+		
+		String res = s1.peek();
+		System.out.println(res);
+		
+		// peek는 마지막 요소를 삭제하지 않는다.
+		System.out.println(s1);
+		
+		res = s1.pop();
+		System.out.println(res );
+		// pop은 마지막 요소를 삭제 한다.
+		System.out.println(s1);
+		
+		boolean b1 = s1.contains("차두리");
+		System.out.println(b1);
+		
+	}
+}
+
+
+
+
+
+
+
+

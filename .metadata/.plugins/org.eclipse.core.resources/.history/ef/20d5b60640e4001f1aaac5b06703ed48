@@ -1,0 +1,17 @@
+package i_sample;
+
+public class Temp {
+
+	Frame f;
+	
+	Temp(){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Temp t = new Temp();
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package k_interface;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Test {
+
+	JFrame f;
+	JButton btn;
+	
+	Test(){
+		f 	= new JFrame("우리의 첫 예제");
+		btn = new JButton("오케이");
+		
+		f.add(btn);
+		f.setBounds(200, 200, 700, 500);
+		f.setVisible(true);
+	}
+	
+	class BtnHandler  ActionListener{
+		
+	}
+	
+	public static void main(String[] args) {
+		Test t = new Test();
+
+	}
+
+}

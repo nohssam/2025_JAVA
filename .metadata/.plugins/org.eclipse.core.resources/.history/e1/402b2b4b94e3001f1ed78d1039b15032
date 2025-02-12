@@ -1,0 +1,11 @@
+package e_static_singleton;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		TabA a = new TabA();
+
+	}
+
+}

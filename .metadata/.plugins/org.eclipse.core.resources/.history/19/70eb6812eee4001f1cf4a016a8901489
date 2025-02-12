@@ -1,0 +1,18 @@
+package j_review;
+
+public class Language {
+	
+	public void greeting() {
+		
+	}
+	
+	
+	public void introduce() {
+		
+	}
+	
+	public void message() {
+		
+	}
+	
+}

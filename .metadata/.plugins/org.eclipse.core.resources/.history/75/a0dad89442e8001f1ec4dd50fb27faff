@@ -1,0 +1,25 @@
+package com.ict.day02;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+
+public class Ex05_List {
+	public static void main(String[] args) {
+		// List 인터페이스를 구현한 클래스 :  Vector, ArrayList  : 배열과 흡사한 구조
+		// ArrayList : 동기화 지원 X
+		//             여러 스레드가 동시에 접근 했을 때 문제 발생  
+		// Vector    : 동기화 지원 O
+		//             여러 스레드가 동시에 접근 했을 때 문제 발생 해결
+		List<String> list = new ArrayList<>();
+		List<String> vector = new Vector<>();
+		
+		// 추가 : add
+		list.add("손흥민");
+		list.add("김민제");
+		list.add("박지성");
+		
+		System.out.println(list);
+		
+	}
+}

@@ -1,0 +1,21 @@
+package j_review;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Language lang = null; 
+				
+		Scanner input = new Scanner(System.in);
+		System.out.println("언어선택(1.한국어 2.영어 3.일본어) ->");
+		int sel = input.nextInt();
+		
+		lang.greeting();
+		lang.introduce();
+		lang.message();
+	}
+
+}

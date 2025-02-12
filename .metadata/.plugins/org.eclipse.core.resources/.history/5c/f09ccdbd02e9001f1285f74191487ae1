@@ -1,0 +1,9 @@
+package com.ict.day03;
+
+public class Ex04_Cow implements Runnable{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}

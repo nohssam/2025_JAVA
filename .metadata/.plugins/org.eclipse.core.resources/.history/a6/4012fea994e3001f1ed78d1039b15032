@@ -1,0 +1,8 @@
+package e_static_singleton;
+
+public class TabC {
+
+	void show() {
+		System.out.println("화면 C 출력");
+	}
+}

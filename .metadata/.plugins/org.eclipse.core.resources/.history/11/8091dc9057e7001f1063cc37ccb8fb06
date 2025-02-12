@@ -1,0 +1,7 @@
+package com.ict.day01;
+
+public class Non_Gereric {
+	public static void main(String[] args) {
+		
+	}
+}

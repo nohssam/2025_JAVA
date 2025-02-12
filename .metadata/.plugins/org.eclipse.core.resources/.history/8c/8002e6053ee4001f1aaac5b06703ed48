@@ -1,0 +1,15 @@
+package i_inherit;
+
+public class PolySample {
+
+	public static void main(String[] args) {
+		
+		method();
+
+	}
+	
+	void method() {
+		
+	}
+
+}

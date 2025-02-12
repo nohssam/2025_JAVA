@@ -1,0 +1,10 @@
+package j_final;
+
+/*
+ 	final : 변경불가
+ */
+public class Test {
+	public static void main(String[] args) {
+		
+	}
+}

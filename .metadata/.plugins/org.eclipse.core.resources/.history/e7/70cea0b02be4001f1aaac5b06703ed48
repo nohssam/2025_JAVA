@@ -1,0 +1,8 @@
+package i_inherit;
+
+public class Appa {
+
+	public void gene() {
+		System.out.println("부모는 부도다");
+	}
+}

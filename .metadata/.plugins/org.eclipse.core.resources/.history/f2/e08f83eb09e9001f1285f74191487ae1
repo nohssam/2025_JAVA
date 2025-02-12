@@ -1,0 +1,7 @@
+package com.ict.day03;
+
+public class Ex06_Main {
+	public static void main(String[] args) {
+		System.out.println("main:"+Thread.currentThread().getName());
+	}
+}

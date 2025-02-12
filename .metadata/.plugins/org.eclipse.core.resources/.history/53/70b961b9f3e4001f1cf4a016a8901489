@@ -1,0 +1,11 @@
+package j_review2;
+
+public class Student {
+
+	String name;
+	String dept;
+	
+	Student(){
+		
+	}
+}

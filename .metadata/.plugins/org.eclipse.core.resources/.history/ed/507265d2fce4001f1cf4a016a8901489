@@ -1,0 +1,19 @@
+package j_final;
+
+/*
+ 	final : 변경불가
+ 		- class : 부모클래스안됨
+ 		- field : 값변경 (=>상수)
+ 		- method : overriding 안됨
+ 		
+ */
+
+class Parent{
+	
+}
+
+public class Test {
+	public static void main(String[] args) {
+		
+	}
+}

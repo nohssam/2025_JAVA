@@ -1,0 +1,16 @@
+package k_interface;
+
+import javax.swing.JFrame;
+
+public class Test {
+
+	JFrame f;
+	
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

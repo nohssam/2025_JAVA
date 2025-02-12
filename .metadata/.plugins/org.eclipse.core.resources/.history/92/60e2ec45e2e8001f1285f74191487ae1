@@ -1,0 +1,8 @@
+package com.ict.day02;
+
+public class Ex09_Map {
+	public static void main(String[] args) {
+		// 이메일 입력하면 사용자ID가 나오는 코딩을 하자 
+		
+	}
+}

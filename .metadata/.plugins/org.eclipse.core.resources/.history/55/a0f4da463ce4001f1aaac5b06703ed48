@@ -1,0 +1,26 @@
+package i_inherit;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Book b = null;
+		CD   c = null;
+		DVD  d = null;
+
+		System.out.println("등록할 상품(1.책 2.CD 3.DVD ) ->");
+		Scanner input  = new Scanner(System.in);
+		int sel = input.nextInt();
+		
+		switch(sel) {
+		case 1 : b = new Book("1000","자바","javassem","ICT"); break;
+		case 2 : c = new CD();  break;
+		case 3 : d = new DVD(); break;
+		}
+		
+		
+	}
+
+}

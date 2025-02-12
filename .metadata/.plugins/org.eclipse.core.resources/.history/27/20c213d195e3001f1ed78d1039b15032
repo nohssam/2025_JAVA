@@ -1,0 +1,15 @@
+package e_static_singleton;
+
+public class DBConnect {
+
+	private DBConnect(){
+		System.out.println("실제로 디비 연결");
+	}
+	
+	private DBConnect  con = null;
+	
+	public DBConnect getInstance() {
+		if( con == null) con = new DBConnect();
+		return con;
+	}
+}

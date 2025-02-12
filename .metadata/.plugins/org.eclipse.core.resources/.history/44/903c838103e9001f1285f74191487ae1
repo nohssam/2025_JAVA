@@ -1,0 +1,11 @@
+package com.ict.day03;
+
+public class Ex04_Main {
+	public static void main(String[] args) {
+		System.out.println("main:"+Thread.currentThread().getName());
+		
+		Ex04_Dog dog = new Ex04_Dog();
+		Ex04_Cat cat = new Ex04_Cat();
+		Ex04_Cow cow = new Ex04_Cow();
+	}
+}

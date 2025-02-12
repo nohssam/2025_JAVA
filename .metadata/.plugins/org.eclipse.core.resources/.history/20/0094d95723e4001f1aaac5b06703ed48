@@ -1,0 +1,17 @@
+package e_review;
+
+public class Goods {
+
+	int no;
+	String gname;
+	String desc;
+	
+	Goods(int  no, String  gname, String desc ){
+		
+	}
+	
+	void output() {
+		System.out.println("번호:" + no +"/상품명:" + gname 
+					+ "/상품설명:"+ desc);
+	}
+}

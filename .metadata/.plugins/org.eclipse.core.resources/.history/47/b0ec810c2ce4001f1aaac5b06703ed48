@@ -1,0 +1,15 @@
+package i_inherit;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Appa parent = new Appa();
+		parent.gene();
+		parent.job();
+		
+		
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package j_review;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Language lang = null; 
+				
+		
+		lang.greeting();
+		lang.introduce();
+		lang.message();
+	}
+
+}

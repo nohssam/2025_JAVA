@@ -1,0 +1,7 @@
+package g_access;
+
+public class Access {
+	String a = "프라이빗 데이타";
+	String b = "디폴트 데이타";
+	String c = "프로텍티드 데이타";
+}

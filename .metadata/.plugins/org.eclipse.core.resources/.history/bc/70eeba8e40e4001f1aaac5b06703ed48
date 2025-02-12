@@ -1,0 +1,15 @@
+package i_sample;
+
+public class MyFrame {
+
+	MyFrame(){
+		
+	}
+	
+	public static void main(String[] args) {
+
+		MyFrame f  = new MyFrame();
+
+	}
+
+}

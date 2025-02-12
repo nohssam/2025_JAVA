@@ -1,0 +1,17 @@
+package j_review;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Language lang = null; 
+				
+		Scanner input = new Scanner(System.in);
+		
+		lang.greeting();
+		lang.introduce();
+		lang.message();
+	}
+
+}

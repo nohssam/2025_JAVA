@@ -1,0 +1,17 @@
+package j_review;
+
+public class Korean extends Language{
+	
+	public void greeting() {
+		
+	}
+	
+	
+	public void introduce() {
+		
+	}
+	
+	public void message() {
+		
+	}
+}

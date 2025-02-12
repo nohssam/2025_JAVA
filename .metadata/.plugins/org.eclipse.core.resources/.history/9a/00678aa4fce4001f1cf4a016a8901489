@@ -1,0 +1,14 @@
+package j_final;
+
+/*
+ 	final : 변경불가
+ 		- class :
+ 		- field :
+ 		- method : 
+ 		
+ */
+public class Test {
+	public static void main(String[] args) {
+		
+	}
+}

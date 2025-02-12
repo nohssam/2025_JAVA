@@ -1,0 +1,7 @@
+package com.ict.day01;
+
+public class GerericTest2 {
+	public static void main(String[] args) {
+		
+	}
+}

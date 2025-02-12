@@ -1,0 +1,6 @@
+package i_inherit;
+
+public class DVD {
+	String actor;
+	String director;
+}

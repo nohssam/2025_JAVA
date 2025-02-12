@@ -1,0 +1,10 @@
+package com.ict.day03;
+
+public class Ex07_Main {
+	public static void main(String[] args) {
+		
+		Ex07_Sync sync = new Ex07_Sync();
+		Thread t = new Thread(sync);
+		t.start();
+	}
+}

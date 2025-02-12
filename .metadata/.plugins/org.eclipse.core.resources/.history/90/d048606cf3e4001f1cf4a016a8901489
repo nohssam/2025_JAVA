@@ -1,0 +1,8 @@
+package j_review2;
+
+public class Student {
+
+	String name = "홍길동";
+	String dept = "컴공";
+	
+}

@@ -1,0 +1,5 @@
+package com.ict.day03;
+
+public class Ex03_Cat extends Thread{
+
+}

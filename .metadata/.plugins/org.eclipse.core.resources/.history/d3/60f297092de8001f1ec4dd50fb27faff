@@ -1,0 +1,15 @@
+package com.ict.day02;
+
+public class Ex03_List {
+	public static void main(String[] args) {
+		// List 인터페이스 : 배열과 흡사한 구조
+		//               삽입,삭제, 추가가 자유롭다.
+		//               크기를 미리 지정하지 않아도 된다.
+		//               중복 허용
+		// List 구현한 클래스 : Stack, Vector, ArrayList
+		// Stack는 LIFO(Last In First Out)
+		// 마지막에 들어온 데이터가 먼저 나가는 구조
+		
+		
+	}
+}

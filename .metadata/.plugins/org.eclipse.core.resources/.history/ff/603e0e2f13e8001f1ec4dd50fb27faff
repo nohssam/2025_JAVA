@@ -1,0 +1,48 @@
+package com.ict.day01;
+
+public class ExamVO {
+	private String name, hak;
+	private int kor, eng, math, sum;
+	private double avg;
+	
+	public ExamVO() {}
+
+	public ExamVO(String name, int kor, int eng, int math) {
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		
+		// 메서드를 호출
+		sum();
+		avg();
+		hak();
+	}
+	
+	public void sum() {
+		sum = kor + eng + math ;
+	}
+	public void avg() {
+		avg = (int)(sum/3.0*10)/10.0 ;
+	}
+	public void hak() {
+		if(avg >=90) {
+			hak="A학점";
+		}else if(avg>=80) {
+			hak="B학점";
+		}else if(avg>=70) {
+			hak="C학점";
+		}else {
+			hak="F학점";
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+

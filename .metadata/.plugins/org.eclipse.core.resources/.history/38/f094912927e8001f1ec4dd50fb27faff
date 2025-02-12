@@ -1,0 +1,11 @@
+package com.ict.day02;
+
+public class Ex02_Set {
+	public static void main(String[] args) {
+		// 1-10까지 랜덤 숫자 6개 출력  중복 안되게 
+	
+		
+		
+		// 1-10까지 랜덤 숫자 6개 출력  중복 안되게 (Set)
+	}
+}

@@ -1,0 +1,31 @@
+package com.ict.day01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Drink {}
+class Juice extends Drink {}
+class AppleJuice extends Juice{}
+
+public class GerericTest2 {
+	public static void main(String[] args) {
+//		ArrayList<Juice> juiceList = new ArrayList<>();
+		// List 인터페이스이고  ArrayList가 List를 상속 받았을 떄 
+		// 보통 생성하는 방법
+		// 해당 클래스를 자세히 알고 싶으면 이클리스에서는 shift + f2
+		
+		// Juice라는 클래스를 이용해서 만든 객체를 모아 놓은 ArrayList 객체이다.
+		List<Juice> juiceList = new ArrayList<>();
+		// 공변
+		List<? extends Juice> list1 = juiceList;
+		
+		// 오류 : 읽기만 가능 (쓰기는 오류) 
+		// list1.add(new Juice());
+		// list1.add(new AppleJuice());
+		
+		Juice juice = list1.get(0);
+		AppleJuice appleJuice = (AppleJuice) list1.get(0); // 강제 형변환
+		Drink drink = list1.get(0); // 업캐스팅
+		
+	}
+}

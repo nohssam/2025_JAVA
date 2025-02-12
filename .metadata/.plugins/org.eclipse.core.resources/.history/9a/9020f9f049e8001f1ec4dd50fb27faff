@@ -1,0 +1,9 @@
+package com.ict.day02;
+
+public class Ex06_Queue {
+	public static void main(String[] args) {
+		// Queue 인터페이스 : FIFO(먼저들어온 데이터가 먼저 나감)
+		//       구현 클래스 : LinkedList(동기화 안됨)
+		
+	}
+}

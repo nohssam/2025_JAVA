@@ -1,0 +1,5 @@
+package j_review;
+
+public class Korean extends Language{
+
+}

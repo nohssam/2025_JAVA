@@ -1,0 +1,10 @@
+package i_sample;
+
+public class DVD extends Item{
+	String actor;
+	String director;
+	
+	public void output() {
+		
+	}
+}

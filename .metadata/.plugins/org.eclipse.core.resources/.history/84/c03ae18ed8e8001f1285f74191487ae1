@@ -1,0 +1,17 @@
+package com.ict.day02;
+
+public class Test {
+	public static void main(String[] args) {
+		int s1 = 5 ; // 전치
+		int s2 = 6 ; // 후치
+		
+		int c = ++s1 + s2--;
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(c);
+		
+		
+		// a =6, 5, 12
+	}
+}

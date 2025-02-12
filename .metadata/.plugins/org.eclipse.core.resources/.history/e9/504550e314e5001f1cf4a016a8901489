@@ -1,0 +1,17 @@
+package k_interface;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Test {
+
+	JFrame f;
+	JButton btn;
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

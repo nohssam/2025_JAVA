@@ -1,0 +1,10 @@
+package com.ict.day03;
+
+public class Ex05_Daemon {
+	// 데몬 스레드 : 주 스레드의 작업을 돕는 보조적인 역할을 수행하는 스레드
+	//           주 스레드가 종료되면 데몬 스레드는 강제적으로 자동 종료된다.
+	
+	public static void main(String[] args) {
+		
+	}
+}

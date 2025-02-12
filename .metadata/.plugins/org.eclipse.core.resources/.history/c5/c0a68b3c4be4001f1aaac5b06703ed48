@@ -1,0 +1,18 @@
+package i_sample;
+
+import java.awt.Frame;
+
+public class MyFrame extends Frame{
+
+	MyFrame(){
+		setBounds(100, 100, 500, 400);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+
+		MyFrame f  = new MyFrame();
+
+	}
+
+}

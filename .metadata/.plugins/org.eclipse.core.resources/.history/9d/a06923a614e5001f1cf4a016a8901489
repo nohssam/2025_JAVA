@@ -1,0 +1,13 @@
+package k_interface;
+
+public class Test {
+
+	JFrame f;
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

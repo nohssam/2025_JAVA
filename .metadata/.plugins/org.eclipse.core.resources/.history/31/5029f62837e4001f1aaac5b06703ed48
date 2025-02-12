@@ -1,0 +1,21 @@
+package i_inherit;
+
+public class Book extends Item{
+	String writer;
+	String publisher;
+	
+	Book(){
+		
+	}
+	
+	Book(String no, String title, String writer, String publisher){
+		super.no = no;
+		super.title = title;
+		this.writer = writer;
+		this.publisher = publisher;
+	}
+	
+	void output() {
+		
+	}
+}

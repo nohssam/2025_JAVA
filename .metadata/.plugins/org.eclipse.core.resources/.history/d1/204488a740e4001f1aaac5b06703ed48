@@ -1,0 +1,17 @@
+package i_sample;
+
+import java.awt.Frame;
+
+public class MyFrame extends Frame{
+
+	MyFrame(){
+		
+	}
+	
+	public static void main(String[] args) {
+
+		MyFrame f  = new MyFrame();
+
+	}
+
+}

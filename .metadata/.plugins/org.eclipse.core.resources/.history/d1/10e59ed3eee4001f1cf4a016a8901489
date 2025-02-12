@@ -1,0 +1,10 @@
+package j_review;
+
+public class Japaness extends Language{
+
+	@Override
+	public void greeting() {
+		
+	}
+
+}

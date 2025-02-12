@@ -1,0 +1,20 @@
+package com.ict.day02;
+
+import java.util.List;
+import java.util.Stack;
+
+public class Ex04_List {
+	public static void main(String[] args) {
+		Stack<String> s1 = new Stack<>();
+		List<String> s2 = new Stack<String>();
+		
+		// 추가, 
+		s1.add("둘리");
+		s1.push("공실이");
+		s1.addElement("마이콜");
+		
+		// 입력 순서대로
+		System.out.println(s1);
+		
+	}
+}

@@ -1,0 +1,13 @@
+package i_inherit;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Book b = null;
+		CD   c = null;
+		DVD  d = null;
+
+	}
+
+}

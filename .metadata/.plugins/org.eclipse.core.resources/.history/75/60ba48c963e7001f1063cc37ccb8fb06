@@ -1,0 +1,12 @@
+package com.ict.day01;
+
+class Drink {}
+class Juice extends Drink {}
+class AppleJuice extends Juice{}
+
+
+public class GerericTest2 {
+	public static void main(String[] args) {
+		
+	}
+}

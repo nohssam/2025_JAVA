@@ -1,0 +1,36 @@
+package com.ict.day01;
+
+import java.util.HashSet;
+
+public class CollectionTestSet01 {
+	public static void main(String[] args) {
+		// Set 인터페이스를 구현한 클래스 : HashSet, TreeSet
+		// 특징 : 중복불가, 특정기준으로 정렬이 안됨
+		//       단, TreeSet은 항상 오름차순을 유지
+		
+		// 1. 컬렉션 생성
+		// E => Element = 요소 ;
+		HashSet<String> h1 = new HashSet<>();
+		HashSet<Integer> h2 = new HashSet<>();
+		HashSet<Double> h3 = new HashSet<>();
+		
+		// 2. 컬렉션에 객체 넣기 (add(E e))
+		String str1 = "Hello";
+		String str2 = "world";
+		String str3 = "java";
+		
+		h1.add(str1);
+		h1.add(str2);
+		h1.add(str3);
+		h1.add(new String("spring"));
+		// 중복불가
+		h1.add(str2);
+		h1.add(new String("Hello"));
+		
+		System.out.println(h1);
+		
+		
+		
+		
+	}
+}

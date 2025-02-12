@@ -1,0 +1,14 @@
+package j_review2;
+
+public class Student extends Object{
+
+	String name;
+	String dept;
+	
+	Student(){}
+	
+	Student(String name, String dept){
+		this.name = name;
+		this.dept = dept;
+	}
+}

@@ -1,0 +1,6 @@
+package i_inherit;
+
+public class Item {
+	String no;
+	String title;
+}

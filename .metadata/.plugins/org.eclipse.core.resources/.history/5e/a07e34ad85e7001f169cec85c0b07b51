@@ -1,0 +1,21 @@
+package com.ict.day01;
+
+public class CollectionTestSet02 {
+	public static void main(String[] args) {
+		SetExam p1 = new SetExam();
+		p1.setName("둘리");
+		p1.setAge(3200);
+		
+		SetExam p2 = new SetExam();
+		p2.setName("희동이");
+		p2.setAge(3);
+		
+		SetExam p3 = new SetExam();
+		p2.setName("마이콜");
+		p2.setAge(24);
+		
+		
+		
+		
+	}
+}
