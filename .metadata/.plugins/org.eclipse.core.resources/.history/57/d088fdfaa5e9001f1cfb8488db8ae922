@@ -1,0 +1,10 @@
+package com.ict.day04;
+
+public class Ex01_User extends Thread{
+	private Ex01_Bank bank ;
+	private boolean isDeposit; 
+	private int amount;
+	
+	
+
+}

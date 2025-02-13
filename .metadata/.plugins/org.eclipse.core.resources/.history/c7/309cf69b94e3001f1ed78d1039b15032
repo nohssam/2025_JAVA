@@ -1,8 +1,0 @@
-package e_static_singleton;
-
-public class TabB {
-
-	void show() {
-		System.out.println("화면 B 출력");
-	}
-}

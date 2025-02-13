@@ -4,6 +4,7 @@ public class Ex07_Main {
 	public static void main(String[] args) {
 		
 		Ex07_Sync sync = new Ex07_Sync();
+		
 		Thread t1 = new Thread(sync,"dog");
 		Thread t2 = new Thread(sync,"cat");
 		Thread t3 = new Thread(sync,"tiger");

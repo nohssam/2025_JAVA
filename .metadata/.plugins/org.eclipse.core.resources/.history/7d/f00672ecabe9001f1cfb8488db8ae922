@@ -1,0 +1,9 @@
+package com.ict.day04;
+
+public class Ex02_Main {
+	public static void main(String[] args) {
+		Ex02_Wait wait = new Ex02_Wait();
+		
+		
+	}
+}
