@@ -1,0 +1,28 @@
+package com.ict.day05;
+
+import java.io.File;
+import java.nio.file.Paths;
+
+public class Ex03_FileCopy {
+	public static void main(String[] args) {
+		// 파일 입력
+		String input = Paths.get("D:", "bear.avif").toString();
+		File in_file = new File(input);
+		
+		// 파일 출력
+		String output = Paths.get("D:", "workspaces","util","bear.avif").toString();
+		File out_file = new File(output);
+		
+		try {
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		} finally {
+			try {
+				
+			} catch (Exception e2) {
+				System.out.println(e2);
+			}
+		}
+	}
+}

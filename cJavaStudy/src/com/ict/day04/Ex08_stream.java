@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 	2. 문자 스트림  : 모든 처리 2byte 처리 
 	        대상  : 세계 모든 문자로 구성된 파일
 	   최상위 클래스 : Reader(입력), Writer(출력)
-	3. 결합 스트림 : 바이트스트림 <====> 문자스트림           
+	3. 결합 스트림 : 바이트스트림 <==>결합스트림<==> 문자스트림           
 	            기계를 통한 입/출력된 정보 사람이 알아볼수 있도록 입/출력 한다.
 	   최상위 클래스 :  InputStreamReader(입력), OuputStreamWriter(출력)
 	4. 오브젝트 스트림 : 객체 직렬화 후 객체 단위로 입/출력
@@ -67,8 +67,7 @@ public class Ex08_stream {
 			String msg = "Hi~~\n안녕\n123456\n大韓\nBye~~~";
 			byte[] b2 = msg.getBytes();
 			fos.write(b2);
-			
-			
+			fos.flush();
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -78,7 +77,6 @@ public class Ex08_stream {
 			try {
 				fos.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

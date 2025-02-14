@@ -1,9 +1,0 @@
-package i_sample;
-
-public class CD extends Item{
-	String singer;
-	
-	public void output()  {
-		
-	}
-}

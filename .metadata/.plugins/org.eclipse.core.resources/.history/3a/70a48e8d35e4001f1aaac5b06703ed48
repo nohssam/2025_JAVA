@@ -1,7 +1,0 @@
-package i_inherit;
-
-public class Book {
-	String writer;
-	String publisher;
-	
-}

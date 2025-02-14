@@ -1,0 +1,21 @@
+package com.ict.day05;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class Ex02_InputStream {
+	public static void main(String[] args) {
+		// 파일 입력 스트림 : InputStream 자식클래스인 FileInputStream 사용
+		//  - FileInputStream 은 해당 파일에 내용을 1byte씩 입력(읽기)
+		//  1. read(): int => 숫자(아스키코드(0-255)), 한글자
+		//                    숫자를 문자로 보기 위해서 char 형변환을 해야 한다.
+		//                    더 이상 읽을 수 없을 때에는 -1이 나온다.
+		//  2. read(byte[] b) : 읽어서 배열에 넣기  
+		//                      String 생성자에 byte[] 받아서  
+		//                      String 으로 만들어주는 생성자를 활용하자
+		//  3. close() : 입력 스트림 닫기
+		
+		String path = Paths.get("D:","workspaces", "0214.txt").toString();
+		
+	}
+}

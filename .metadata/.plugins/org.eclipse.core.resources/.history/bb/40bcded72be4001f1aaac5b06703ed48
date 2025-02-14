@@ -1,8 +1,0 @@
-package i_inherit;
-
-public class Adul {
-
-	public void gene() {
-		System.out.println("자식은 자식이다");
-	}
-}

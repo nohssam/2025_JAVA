@@ -1,0 +1,7 @@
+package com.ict.day05;
+
+public class Ex03_BufferedInputStream {
+	public static void main(String[] args) {
+		
+	}
+}

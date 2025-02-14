@@ -1,0 +1,9 @@
+package com.ict.day05;
+
+// DataOutputStream, DataInputStream
+//  기본자료형을 읽고, 쓸 수 있는 스트림 
+//  반드시 입력순서와 출력순서를 맞춰야 한다.
+//  이진 데이터 형식(바이너리 형식)으로 파일 또는 네트워크 스크림에 기록할 때 사용
+public class Ex05_DataStream {
+	
+}

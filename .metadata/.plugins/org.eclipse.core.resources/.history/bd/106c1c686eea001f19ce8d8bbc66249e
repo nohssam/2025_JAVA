@@ -1,0 +1,11 @@
+package com.ict.day05;
+
+import java.nio.file.Paths;
+
+public class Ex01_Stream {
+	public static void main(String[] args) {
+		// 스트림은 지연 될 수 있으므로 Buffer 이용해서 지연 현상을 해결한다.
+		// BufferedInputStream, BuuferedOutputStream // 혼자서는 사용안함
+		String path = Paths.get("D:", "workspaces","0214.txt").toString();
+	}
+}
