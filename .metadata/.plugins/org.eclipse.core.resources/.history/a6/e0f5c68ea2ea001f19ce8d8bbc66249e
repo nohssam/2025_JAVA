@@ -1,0 +1,14 @@
+package com.ict.day05;
+
+public class Ex11_PrintWriter {
+	public static void main(String[] args) {
+		// PrintStream : 모두 데이터 출력 가능, 자동 flush 기능 (바이트 출력)
+		//               콘솔 출력에 적합(System.out)
+		
+		// PrintWriter : 모두 데이터 출력 가능, 자동 flush 기능 
+		//               (바이트 출력과 문자 출력 둘 가 가능)
+		//               파일출력, 네트워크 전송에 주로 사용
+		
+		
+	}
+}

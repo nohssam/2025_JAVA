@@ -1,0 +1,7 @@
+package com.ict.day05;
+
+public class Ex10_BufferedReader {
+	public static void main(String[] args) {
+		// readLine() => 한 줄씩 읽는다. 
+	}
+}

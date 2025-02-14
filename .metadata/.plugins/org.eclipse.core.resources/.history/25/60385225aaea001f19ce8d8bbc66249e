@@ -1,0 +1,17 @@
+package com.ict.day05;
+
+// VO : ValueObject : 데이터를 가지고는 객체
+//                    데이터를 저장하는 객체
+//                    객체불변, 데이터 초기화 하면  setter 가 필요없음
+
+// DTO : Data Transfer Object : 데이터 전송을 위한 객체
+//                             getter,setter 모두 존재
+
+public class Ex13_VO {
+	private String name;
+	private int age;
+	private double weight;
+	private boolean gender ;
+	
+	
+}

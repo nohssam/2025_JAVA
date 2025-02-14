@@ -1,0 +1,37 @@
+package com.ict.day05;
+
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+
+// OutputStreamWriter : 문자 스트림을 바이트 스트림으로 변환
+//                      즉 문자를 특정 인코딩을 사용하여 바이트로 변환하는 출력 스트림
+// InputStreamReader : 바이트 스트림을 문자 스트림으로 변환
+
+public class Ex12_OutputStreamWriter {
+	public static void main(String[] args) {
+//		Scanner scan = new Scanner(System.in);
+//		System.out.print("원하는 문자 : ");
+//		
+//		String msg = scan.next();
+//		System.out.print("받은 문자 : " + msg);
+		
+		OutputStreamWriter osw = null;
+		BufferedWriter bw = null;
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		} finally {
+			try {
+				bw.close();
+				osw.close();
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+		}
+		
+		
+	}
+}
