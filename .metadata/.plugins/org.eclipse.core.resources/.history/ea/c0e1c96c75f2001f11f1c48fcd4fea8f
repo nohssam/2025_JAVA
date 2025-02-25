@@ -1,0 +1,13 @@
+package com.library.service;
+
+import com.library.repository.LoanRepository;
+
+public class LibraryService {
+	
+	public static void showBorrowedBooks() {
+		
+		// 일 처리 = 요구사항 처리 = 비즈니스 로직
+		// 대출된 도서 목록 보기 (DB) 
+		LoanRepository.getBorroweBooks();
+	}
+}

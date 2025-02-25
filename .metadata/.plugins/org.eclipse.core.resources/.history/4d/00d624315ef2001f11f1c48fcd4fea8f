@@ -1,0 +1,11 @@
+package com.library.controller;
+
+import java.util.Scanner;
+
+public class LibraryController {
+    private static final Scanner scan = new Scanner(System.in);
+   
+    public static void startLibrarySytem() {
+    	
+    }
+}

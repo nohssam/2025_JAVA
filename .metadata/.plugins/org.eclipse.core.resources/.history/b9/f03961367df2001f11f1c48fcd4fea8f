@@ -1,0 +1,17 @@
+package com.library.model;
+
+public class BookData {
+	private int bookdata_id;
+	private String title;
+	private int available;
+	
+	public BookData(int bookdata_id, String title, int available) {
+		this.bookdata_id = bookdata_id;
+		this.title = title;
+		this.available = available;
+	}
+	
+	
+	
+	
+}

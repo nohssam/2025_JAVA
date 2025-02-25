@@ -1,0 +1,33 @@
+package com.library.repository;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.library.model.BookData;
+
+public class BookRepository {
+	public static List<BookData> showBooks(){
+		List<BookData> bookdatas = new ArrayList<>();
+		
+		String query = "SELECT * FROM bookdata" ;
+		
+		try (Connection conn = DatabaseManager.getConnection();
+			 Statement stmt = conn.createStatement();
+			 ResultSet rs = stmt.executeQuery(query)){
+			while (rs.next()) {
+				BookData bookdata = 
+					new BookData(rs.getInt("bookdata_id"), 
+							rs.getString("title"), 
+							rs.getInt("available"));
+				
+				bookdatas.add(bookdata)	;
+			}
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return bookdatas;
+	}
+}

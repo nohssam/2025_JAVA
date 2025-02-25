@@ -1,0 +1,23 @@
+
+# 자료형 (datatype)
+
+1. 기본형
+	논리형 : boolean 
+	문자형 : char
+	정수형 : int / long
+	실수형 : double
+
+	* casting : (변경할자료형)
+
+2. 참조형
+	- 클래스 / 배열
+	
+	[*] 문자열 : String
+	
+	
+[ 참고 ]
+	논리형 : boolean 
+	문자형 : char
+	정수형 : byte / short / int / long
+	실수형 : float / double
+

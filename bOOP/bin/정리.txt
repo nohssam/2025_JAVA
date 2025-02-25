@@ -1,0 +1,41 @@
+
+ [1]  class A {		// 클래스
+   
+   	[2]	int A ;		// 멤버변수
+   		
+   	[3]	A(){}		// 생성자
+   
+   	[4]	void A(){}	// 멤버메소드
+   }
+   
+[1] public abstract final
+[2] private protected public static final
+[3] private protected public
+[4] private protected public static abstract final
+
+-----------------------------------
+
+class A {
+   int A;
+   A(){}
+   void A(){}
+}
+
+interface B {
+  [1]	int B;
+  [2]	void B();
+}
+
+* interface modify 고정(자동)
+[1] public static final
+[2] public abstract
+
+* 생성자함수 없음
+* 메소드 미완성
+
+
+
+
+
+
+

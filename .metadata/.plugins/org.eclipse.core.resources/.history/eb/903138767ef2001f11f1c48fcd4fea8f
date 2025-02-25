@@ -1,0 +1,36 @@
+package com.library.service;
+
+import java.util.Iterator;
+import java.util.List;
+
+import com.library.model.Loan;
+import com.library.repository.LoanRepository;
+
+public class LibraryService {
+	
+	public static void showBorrowedBooks() {
+		// 일 처리 = 요구사항 처리 = 비즈니스 로직
+		// 대출된 도서 목록 보기 (DB) 
+		List<Loan> loans = LoanRepository.getBorroweBooks();
+		if(loans.isEmpty()) {
+			System.out.println("대출 중인 도서 가 없습니다.");
+		}else {
+			System.out.println("대출된 도서 목록");
+			Iterator<Loan> it = loans.iterator();
+			while (it.hasNext()) {
+				Loan loan = (Loan) it.next();
+				System.out.println(loan.toString());
+			}
+		}
+	}
+	
+	public static void showBooks() {
+		List<>
+	}
+}
+
+
+
+
+
+

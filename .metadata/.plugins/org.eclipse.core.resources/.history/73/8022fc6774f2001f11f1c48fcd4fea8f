@@ -1,0 +1,40 @@
+package com.library.repository;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.library.model.Loan;
+
+public class LoanRepository {
+	public static List<Loan> getBorroweBooks(){
+		// select 문인 경우 0, 1 , 여러개의 결과가 나올수 있다. => List 사용 이유
+		// Loan 클래스는  select 결과를 담기 위한 클래스 (VO, DTO)
+		List<Loan> loans = new ArrayList<>();
+		
+		// 3. Query 보내기
+		String query = "SELECT * FROM loan WHERE STATUS LIKE '대출중'" ;
+		
+		// try-with-resources 자원을 안전하게 관리하기 위한 문법
+		// 파일, 네트워크, 데이터베이스 사용 후 반드시 닫아야 하는 자원을 자동으로 처리
+		// 위에서 만들어진 query를 담아서 DB 에 보내자 
+			try (Connection conn = DatabaseManager.getConnection();
+				  // 3-1.DB에 보내질 Query 담을 클래스 객체 생성
+				  Statement stmt = conn.createStatement();
+				  // 3-2. Query 담아서 보내고 결과를 받자 
+				  //  select  => executeQuery(query) => 결과가 ResultSet
+			      //  insert, update, delete => executeUpdate(query) => 결과가 int 		
+				  ResultSet rs = stmt.executeQuery(query)) {
+				
+				
+			
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} 
+		
+		return loans ;
+	}
+}

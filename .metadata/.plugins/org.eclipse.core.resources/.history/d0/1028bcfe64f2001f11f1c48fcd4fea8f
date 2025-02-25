@@ -1,0 +1,23 @@
+package com.library.model;
+
+import java.time.LocalDate;
+
+// Loan 테이블과 일치하게 만들자 
+public class Loan {
+	private int loan_id ;
+	private int bookdata_id;
+	private int member_id;
+	private String status;
+	private LocalDate loan_date ;
+	
+	public Loan(int loan_id, int bookdata_id, int member_id, String status, LocalDate loan_date) {
+		super();
+		this.loan_id = loan_id;
+		this.bookdata_id = bookdata_id;
+		this.member_id = member_id;
+		this.status = status;
+		this.loan_date = loan_date;
+	}
+	
+	
+}
