@@ -1,9 +1,0 @@
-package com.library.repository;
-
-import java.util.List;
-
-public class LoanRepository {
-	public static List<Loan> getBorroweBooks(){
-		
-	}
-}
