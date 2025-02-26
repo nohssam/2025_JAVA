@@ -22,6 +22,11 @@ public class LibraryService {
 			while (it.hasNext()) {
 				Loan loan = (Loan) it.next();
 				System.out.println(loan.toString());
+//				System.out.print(loan.getLoan_id());
+//				System.out.print(loan.getBookdata_id());
+//				System.out.print(loan.getMember_id());
+//				System.out.print(loan.getStatus());
+//				System.out.println(loan.getLoan_date());
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-package com.library.repository;
+package com.ict.repository;
 
 import java.io.FileInputStream;
 import java.sql.Connection;
@@ -11,7 +11,7 @@ public class DatabaseManager {
 	private static String USER ;
 	private static String PASSWORD;
 	
-	// static  초기화
+	// static 초기화
 	static {
 		try {
 			Properties properties = new Properties();
@@ -19,18 +19,21 @@ public class DatabaseManager {
 			URL = properties.getProperty("db.url");
 			USER = properties.getProperty("db.user");
 			PASSWORD = properties.getProperty("db.password");
-			
-			// 1.드라이버 연결 
-			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		
 	}
 	
-	// 2.접속하기 
+	// DB와 실제 연결 하는 메서드 
 	public static Connection getConnection() throws SQLException{
 		return DriverManager.getConnection(URL, USER, PASSWORD);
 	}
-	
 }
+
+
+
+
+
+
+
+
