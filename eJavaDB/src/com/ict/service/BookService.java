@@ -40,6 +40,26 @@ public class BookService {
 			System.out.println("요청하신 자료는 존재하지 않습니다.");
 		}
 	}
+	
+	public static int insertBook(String bookname,String publisher,int price ) {
+		int result = 0 ;
+		// DB 처리하기 위해서는  Repository
+		result = BookRepository.insertBook(bookname, publisher, price);
+		return result;
+	}
+	
+	public static int updateBook(int bookid,String bookname,String publisher,int price ) {
+		int result = 0 ;
+		// DB 처리하기 위해서는  Repository
+		result = BookRepository.updateBook(bookid, bookname, publisher, price);
+		return result;
+	}
+	public static int deleteBook(int bookid) {
+		int result = 0 ;
+		// DB 처리하기 위해서는  Repository
+		result = BookRepository.deleteBook(bookid);
+		return result;
+	}
 }
 
 

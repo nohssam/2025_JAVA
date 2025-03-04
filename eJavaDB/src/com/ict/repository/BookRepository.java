@@ -71,6 +71,51 @@ public class BookRepository {
 		
 		return list;
 	}
+	
+	public static int insertBook(String bookname, String publisher,int price) {
+		int result = 0 ;
+		String query = "insert into book(bookname, publisher, price) "
+				+ " values(?,?,?)";
+		try(Connection conn = DatabaseManager.getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(query)){
+			pstmt.setString(1, bookname);
+			pstmt.setString(2, publisher);
+			pstmt.setInt(3, price);
+			result = pstmt.executeUpdate();
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+		return result;
+	}
+	
+	public static int updateBook(int bookid ,String bookname, String publisher,int price) {
+		int result = 0 ;
+		String query = "update book set bookname=?, publisher=?, price=? where bookid = ?";
+		try(Connection conn = DatabaseManager.getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(query)){
+			pstmt.setString(1, bookname);
+			pstmt.setString(2, publisher);
+			pstmt.setInt(3, price);
+			pstmt.setInt(4, bookid);
+			result = pstmt.executeUpdate();
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+		return result;
+	}
+	
+	public static int deleteBook(int bookid) {
+		int result = 0 ;
+		String query = "delete from book where bookid = ?";
+		try(Connection conn = DatabaseManager.getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(query)){
+			pstmt.setInt(1, bookid);
+			result = pstmt.executeUpdate();
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+		return result;
+	}
 }
 
 

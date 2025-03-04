@@ -27,13 +27,13 @@ public class MyController {
 				searchOne();
 				break;
 			case 3:
-				
+				insertBook();
 				break;
 			case 4:
-	
+				updateBook();
 				break;
 			case 5:
-	
+	            deleteBook();
 				break;
 			case 6:
 				
@@ -75,6 +75,74 @@ public class MyController {
 		default:
 			System.out.println("잘못입력하셨네요");
 			break;
+		}
+	}
+	
+	public static void insertBook() {
+		try {
+			System.out.println("추가할 도서의 정보를 입력하세요");
+			scan.nextLine();
+			System.out.print("bookname : ");
+			String bookname = scan.nextLine();
+			
+			System.out.print("publisher : ");
+			String publisher = scan.nextLine();
+			
+			System.out.print("price : ");
+			int price = scan.nextInt();
+			
+			int res = BookService.insertBook(bookname,publisher,price );
+			if(res>0) {
+				// 전체 도서 검색의 결과를 처리하는 메서드 
+				BookService.searchAll();
+			}
+		} catch (Exception e) {
+			System.out.println("잘못입력하셨네요");
+		}
+	}
+	public static void updateBook() {
+		try {
+			System.out.println("수정할 도서의 정보를 입력하세요");
+			scan.nextLine();
+			System.out.print("bookid : ");
+			int bookid = scan.nextInt();
+			
+			scan.nextLine();
+			System.out.print("bookname : ");
+			String bookname = scan.nextLine();
+			
+			System.out.print("publisher : ");
+			String publisher = scan.nextLine();
+			
+			System.out.print("price : ");
+			int price = scan.nextInt();
+			
+			int res = BookService.updateBook(bookid, bookname,publisher,price );
+			if(res>0) {
+				// 전체 도서 검색의 결과를 처리하는 메서드 
+				BookService.searchAll();
+			}else {
+				System.out.println("수정을 실패 했습니다.");
+			}
+		} catch (Exception e) {
+			System.out.println("잘못입력하셨네요");
+		}
+	}
+	
+	public static void deleteBook() {
+		try {
+			System.out.println("삭제할 책 번호 : ");
+			int bookid = scan.nextInt();
+			
+			int res = BookService.deleteBook(bookid);
+			if(res>0) {
+				// 전체 도서 검색의 결과를 처리하는 메서드 
+				BookService.searchAll();
+			}else {
+				System.out.println("삭제을 실패 했습니다.");
+			}
+		} catch (Exception e) {
+			System.out.println(e);
 		}
 	}
 }
